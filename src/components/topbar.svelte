@@ -12,7 +12,12 @@
 	<button on:click={toggleOpen} class="open-btn">Open button</button>
 
 	<div class:open={isOpen} class="navscreen-div">
-		<Navscreen />
+		<nav>
+			<p id="navscreen-logo">Adam Roberts Software Developer</p>
+			<a on:click={toggleOpen} href="/">Home</a>
+			<a on:click={toggleOpen} href="/about">About</a>
+			<a on:click={toggleOpen} href="/contact">Contact</a>
+		</nav>
 		<button on:click={toggleOpen} class="close-btn">Close button</button>
 	</div>
 </div>
@@ -56,5 +61,42 @@
 	.open {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	#navscreen-logo {
+		position: absolute;
+		top: 10%;
+		left: 3%;
+		font-size: 1.5rem;
+		font-family: Inter;
+		font-weight: bold;
+		color: var(--h1);
+	}
+
+	a {
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 2rem;
+		text-decoration: none;
+		color: var(--h2);
+		border-bottom: 1px solid var(--accent-2);
+		border-radius: 10%;
+		padding: 1rem;
+		padding-bottom: 0.5rem;
+		position: relative;
+		top: 5%;
 	}
 </style>
