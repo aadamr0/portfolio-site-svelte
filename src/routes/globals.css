@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --h1: #333;
+    --h2: #666;
+    --text: #555;
+    --accent-1: #FFA500;
+    --accent-2: #6E8CB6;
+    --accent-3: #007F7F;
+    --border: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+main {
+    height: 100%;
+}
+
+html {
+    overflow: clip;
+}
