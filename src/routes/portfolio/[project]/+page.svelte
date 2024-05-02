@@ -13,7 +13,9 @@
 	{#if project.mediaType === 'img'}
 		<img class="project-media" src={project.mediaUrl} alt="" />
 	{:else}
-		<video height="102%" autoplay loop src={project.mediaUrl}><track kind="captions" /></video>
+		<video playsinline height="102%" autoplay loop src={project.mediaUrl}
+			><track kind="captions" /></video
+		>
 	{/if}
 </div>
 <div class="project-description content-item">
@@ -23,8 +25,7 @@
 	<ul>
 		{#if project.links.GitHub}
 			<li>
-				<a target="_blank" href={project.links.GitHub}>GitHub repo</a
-				>
+				<a target="_blank" href={project.links.GitHub}>GitHub repo</a>
 			</li>
 		{/if}
 		{#if project.links.Demo}
@@ -49,10 +50,10 @@
 		a {
 			text-decoration: none;
 			color: var(--accent-3);
-			padding: .5rem;
+			padding: 0.5rem;
 		}
 		ul {
-			list-style:disc;
+			list-style: disc;
 			list-style-position: inside;
 		}
 		.content-item {
@@ -60,7 +61,7 @@
 			margin-bottom: var(--mobile-vertical-gap);
 		}
 		.project-media-div {
-			box-shadow: 0 0 .45rem .15rem var(--border);
+			box-shadow: 0 0 0.45rem 0.15rem var(--border);
 			border-radius: 1rem;
 			height: 17rem;
 			overflow: clip;
