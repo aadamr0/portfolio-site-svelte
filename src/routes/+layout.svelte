@@ -3,12 +3,28 @@
 
 	import Topbar from '../components/topbar.svelte';
 	import Sidebar from '../components/sidebar.svelte';
+
+	import { fade } from 'svelte/transition';
+	export let data;
+	const transitionSpeed = 125;
+	const transitionPause = 125;
 </script>
 
 <div id="app">
 	<div class="topbar-layout-div"><Topbar /></div>
 	<div class="sidebar-layout-div"><Sidebar /></div>
-	<div class="content-layout-div"><slot /></div>
+	<div class="content-layout-div">
+		<div class="content-column-div">
+			{#key data}
+				<div
+					in:fade={{ duration: transitionSpeed, delay: transitionSpeed + transitionPause }}
+					out:fade={{ duration: transitionSpeed }}
+				>
+					<slot />
+				</div>
+			{/key}
+		</div>
+	</div>
 </div>
 
 <style>
@@ -44,9 +60,14 @@
 
 		.topbar-layout-div {
 			display: block;
-			flex-grow: 0;
+			/* flex-grow: 0;
 			flex-shrink: 0;
-			flex-basis: 10%;
+			flex-basis: 10%; */
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 10%;
 		}
 	}
 </style>
