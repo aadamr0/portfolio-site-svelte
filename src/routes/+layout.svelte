@@ -23,6 +23,10 @@
 					<slot />
 				</div>
 			{/key}
+			<footer>
+				<p>Adam Roberts</p>
+				<p>C 2024</p>
+			</footer>
 		</div>
 	</div>
 </div>
@@ -33,8 +37,16 @@
 	}
 
 	.content-layout-div {
+		height: 100%;
 		overflow: scroll;
 	}
+
+	.content-column-div {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
 
 	/* desktop */
 	.sidebar-layout-div {
@@ -60,14 +72,22 @@
 
 		.topbar-layout-div {
 			display: block;
-			/* flex-grow: 0;
-			flex-shrink: 0;
-			flex-basis: 10%; */
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 10%;
+		}
+
+		footer {
+			margin-top: auto;
+			border-top: 1px solid var(--border);
+			display: flex;
+			justify-content: space-between;
+		}
+		footer p {
+			color: var(--subtle-grey);
+			font-size: .8rem;
 		}
 	}
 </style>

@@ -34,6 +34,10 @@ html {
     overflow: clip;
 }
 
+p {
+    color: var(--text);
+}
+
 .divider {
     border-top: 1px solid var(--border);
 }

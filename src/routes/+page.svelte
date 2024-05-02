@@ -13,34 +13,34 @@
 
 <div class="portfolio-grid-div content-div">
 	<div class="portfolio-item-div">
-		<a href="/about">
+		<a href="portfolio/nc-news-api">
 			<div class="img-div-portfolio-item">
 				<img src="https://placehold.co/600x400" alt="placeholder" />
 			</div>
 			<div class="text-div-portfolio-item">
-				<h2>Title</h2>
+				<h2>NC News API</h2>
 				<h3>About</h3>
 			</div>
 		</a>
 	</div>
 	<div class="portfolio-item-div">
-		<a href="/">
+		<a href="portfolio/nc-news-app">
 			<div class="img-div-portfolio-item">
 				<img src="https://placehold.co/600x400" alt="placeholder" />
 			</div>
 			<div class="text-div-portfolio-item">
-				<h2>Title</h2>
+				<h2>NC News App</h2>
 				<h3>About</h3>
 			</div>
 		</a>
 	</div>
 	<div class="portfolio-item-div">
-		<a href="/">
+		<a href="portfolio/travelog">
 			<div class="img-div-portfolio-item">
 				<img src="https://placehold.co/600x400" alt="placeholder" />
 			</div>
 			<div class="text-div-portfolio-item">
-				<h2>Title</h2>
+				<h2>Travelog</h2>
 				<h3>About</h3>
 			</div>
 		</a>
@@ -56,9 +56,6 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
-	}
-	p {
-		color: var(--text);
 	}
 	.divider-title {
 		font-family: 'Courier New', Courier, monospace;
