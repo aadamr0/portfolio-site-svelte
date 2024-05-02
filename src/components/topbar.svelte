@@ -13,7 +13,7 @@
 		<p>about</p>
 	</a>
 	<a href="/contact" class="topbar-3">
-		<p>contact</p>
+		<p>CV & contact</p>
 	</a>
 </div>
 
@@ -22,7 +22,12 @@
 		width: 100%;
 		height: 100%;
 		/* border-bottom: 1px solid var(--border); */
-		background: linear-gradient(to bottom, rgba(256, 256, 256, 1), rgba(256, 256, 256, .9), rgba(256, 256, 256, 0));
+		background: linear-gradient(
+			to bottom,
+			rgba(256, 256, 256, 1),
+			rgba(256, 256, 256, 0.9),
+			rgba(256, 256, 256, 0)
+		);
 		position: relative;
 		display: flex;
 	}
@@ -30,7 +35,7 @@
 	.topbar-1 {
 		flex-grow: 0;
 		flex-shrink: 0;
-		flex-basis: 40%
+		flex-basis: 40%;
 	}
 
 	.topbar-2 {
@@ -51,6 +56,5 @@
 		font-family: 'Courier New', Courier, monospace;
 		text-decoration: none;
 		color: var(--h2);
-		
 	}
 </style>

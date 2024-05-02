@@ -3,7 +3,7 @@
 </script>
 
 <div class="contact-title content-item">
-	<h1>Contact details</h1>
+	<h1>CV & Contact details</h1>
 </div>
 <div class="contact-grid-div content-item">
 	<div class="email-grid-item contact-grid-item">
@@ -69,6 +69,9 @@
 		}
 		.colour-3 {
 			color: var(--accent-3);
+		}
+		.contact-grid-item h2 {
+			padding-bottom: .66rem;
 		}
 	}
 </style>

@@ -25,7 +25,7 @@
 			{/key}
 			<footer>
 				<p>Adam Roberts</p>
-				<p>C 2024</p>
+				<p>&copy 2024</p>
 			</footer>
 		</div>
 	</div>
