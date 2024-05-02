@@ -6,7 +6,12 @@
 	<h2>Hey, welcome!</h2>
 </div>
 <div class="introduction-div content-div">
-	<h2 id="intro">I am Adam, a talented junior software developer trained by the top bootcamp in the UK. <br> <div class="br"></div> I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express and PostgreSQL. I am looking for an entry level position in an excellent company.</h2>
+	<h2 id="intro">
+		I am Adam, a talented junior software developer trained by the top bootcamp in the UK. <br />
+		<div class="br"></div>
+		 I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express
+		and PostgreSQL. I am looking for an entry level position in an excellent company.
+	</h2>
 </div>
 
 <br />
@@ -29,7 +34,7 @@
 	<div class="portfolio-item-div">
 		<a href="portfolio/nc-news-app">
 			<div class="img-div-portfolio-item app-video">
-				<img src="/fe-scrnsht.png" alt="">
+				<img src="/fe-scrnsht.png" alt="" />
 			</div>
 			<div class="text-div-portfolio-item">
 				<h2>Web App - NC News</h2>
@@ -40,7 +45,8 @@
 	<div class="portfolio-item-div">
 		<a href="portfolio/travelog">
 			<div class="img-div-portfolio-item">
-				<video src="/travelog-video.mov" height="100%" autoplay loop></video>
+				<video id="my-vid" src="/travelog-video.mov" height="100%" autoplay loop playsinline
+				></video>
 			</div>
 			<div class="text-div-portfolio-item">
 				<h2>Mobile App - Travelog</h2>
@@ -98,14 +104,14 @@
 	/* mobile design */
 	@media only screen and (max-width: 768px) {
 		.br {
-			margin-bottom: .5rem;
+			margin-bottom: 0.5rem;
 		}
 		.content-div {
 			margin-inline: var(--mobile-margin-inline);
 		}
 		.welcome-div {
 			margin-top: 7rem;
-			margin-bottom: .5rem;
+			margin-bottom: 0.5rem;
 		}
 		.introduction-div {
 			margin-bottom: 1rem;
@@ -138,7 +144,7 @@
 			height: 13rem;
 			margin-bottom: 0.5rem;
 			background-color: var(--off-white-bg);
-			box-shadow: 0 0rem .5rem 0 var(--accent-3);
+			box-shadow: 0 0rem 0.5rem 0 var(--accent-3);
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -189,10 +195,13 @@
 			margin-bottom: 1rem;
 		}
 		.contact-grid-item h2 {
-			padding-bottom: .66rem;
+			padding-bottom: 0.66rem;
 		}
 		#intro {
 			font-weight: 500;
+		}
+		#my-vid {
+			pointer-events: none;
 		}
 	}
 </style>
