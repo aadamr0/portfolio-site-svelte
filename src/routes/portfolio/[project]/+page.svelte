@@ -13,7 +13,7 @@
 	{#if project.mediaType === 'img'}
 		<img class="project-media" src={project.mediaUrl} alt="" />
 	{:else}
-		<video playsinline height="102%" autoplay loop src={project.mediaUrl}
+		<video id="vid" playsinline height="102%" autoplay loop src={project.mediaUrl}
 			><track kind="captions" /></video
 		>
 	{/if}
@@ -73,6 +73,9 @@
 			object-fit: contain;
 			height: 100%;
 			width: 100%;
+		}
+		#vid {
+			pointer-events: none;
 		}
 	}
 </style>
