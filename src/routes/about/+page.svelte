@@ -1,17 +1,36 @@
 <div class="about-title content-item">
     <h1>More about me</h1>
 </div>
-
-<p>I’m a fast learner, and looking to reach a high level of skill in software development. I want to join a team to craft high-quality software to provide efficent, relevant solutions to whoever possible. As software development is a skill which is adaptable and versatile, interesting, and importantly, which could span over a whole career, I decided to train in the top software development bootcamp in the UK. Now I posses a host skills and tools, and I want to move forwards in a job to learn more and keep up the momentum; with sound communication skills from studying languages during my education, I’m eager to kickstart my programming career in a good company</p>
-<br>
-<p>Tech stack</p>
+<div class="tech-stack content-item">
+    <h3>Tech stack (Full stack development)</h3>
+    <p><strong>Languages:</strong> JavaScript</p>
+    <p><strong>Frontend:</strong> HTML, CSS, React.js, Wave, React Native</p>
+    <p><strong>Backend:</strong> PSQL, Postgres, Express.js, Firebase</p>
+    <p><strong>Hosting:</strong> CI/CD, Render, Netlify, Shared hosting, Elephant SQL</p>
+    <p><strong>Other:</strong> Agile, Pair programming, OOP, Functional programming, AI workflow, MVC, Git, GitHub, version control</p>
+</div>
 <div class="divider"></div>
+<div class="experience content-item">
+    <h3>Experience</h3>
+    <p>I have graduated from the top software development bootcamp in the UK. I have strong foundation skills in full stack web development. I further have experience doing freelance work for a Dutch web developer. <br> An interest in programming came to me when I was a teenager, through the wish to make games. Now I am looking to start my programming career in an excellent company.</p>
+</div>
+<br>
 
 <style>
+
+    h1, h3 {
+        color: var(--h1);
+    }
 
     @media only screen and (max-width: 768px) {
         h1 {
             margin-top: var(--top-of-page-mobile-margin);
+        }
+        h3 {
+            margin-bottom: .25rem;
+        }
+        .divider, .content-item {
+            margin-bottom: 1rem;
         }
         .content-item {
             margin-inline: var(--mobile-margin-inline);

@@ -6,8 +6,7 @@
 	<h2>Hey, welcome!</h2>
 </div>
 <div class="introduction-div content-div">
-	<h2>I am Adam, a talented junior software developer.</h2>
-	<h2>I work with [tech stack here] and I'm looking for an entry level position.</h2>
+	<h2 id="intro">I am Adam, a talented junior software developer trained by the top bootcamp in the UK. <br> <div class="br"></div> I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express and PostgreSQL. I am looking for an entry level position in an excellent company.</h2>
 </div>
 
 <br />
@@ -96,23 +95,26 @@
 		color: var(--subtle-grey);
 	}
 
-	.portfolio-thumb-title {
-		color: red;
-	}
-
 	/* mobile design */
 	@media only screen and (max-width: 768px) {
+		.br {
+			margin-bottom: .5rem;
+		}
 		.content-div {
 			margin-inline: var(--mobile-margin-inline);
 		}
 		.welcome-div {
-			margin-top: var(--top-of-page-mobile-margin);
+			margin-top: 7rem;
+			margin-bottom: .5rem;
+		}
+		.introduction-div {
+			margin-bottom: 1rem;
 		}
 		.divider {
 			margin-left: var(--mobile-margin-inline);
 		}
 		.divider-title {
-			margin-bottom: var(--mobile-vertical-gap);
+			margin-bottom: 2rem;
 		}
 		.portfolio-grid-div {
 			display: grid;
@@ -188,6 +190,9 @@
 		}
 		.contact-grid-item h2 {
 			padding-bottom: .66rem;
+		}
+		#intro {
+			font-weight: 500;
 		}
 	}
 </style>

@@ -7,45 +7,65 @@
 
 <div id="topbar-div">
 	<a href="/" class="topbar-1">
-		<p id="logo">Logo</p>
+		<h1 id="logo">ADAM ROBERTS</h1>
+		<p>Software Developer</p>
 	</a>
 	<a href="/about" class="topbar-2">
-		<p>about</p>
+		<p>About me</p>
 	</a>
 	<a href="/contact" class="topbar-3">
-		<p>CV & contact</p>
+		<p>Contact / CV</p>
 	</a>
 </div>
 
 <style>
+	* {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
 	#topbar-div {
 		width: 100%;
 		height: 100%;
 		/* border-bottom: 1px solid var(--border); */
 		background: linear-gradient(
 			to bottom,
-			rgba(256, 256, 256, 1),
-			rgba(256, 256, 256, 0.9),
-			rgba(256, 256, 256, 0)
+			rgba(256, 256, 256, 1) 70%,
+			rgba(256, 256, 256, .5)
 		);
 		position: relative;
 		display: flex;
+		border-bottom: 1px solid var(--border);
 	}
 
 	.topbar-1 {
 		flex-grow: 0;
 		flex-shrink: 0;
 		flex-basis: 40%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		border-right: 1px solid var(--border);
+	}
+
+	.topbar-1 h1 {
+		font-size: 1rem;
 	}
 
 	.topbar-2 {
 		flex-grow: 1;
 		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-right: 1px solid var(--border);
 	}
 
 	.topbar-3 {
 		flex-grow: 1;
 		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	#logo {
