@@ -8,7 +8,6 @@
 <div id="topbar-div">
 	<a href="/" class="topbar-1">
 		<h1 id="logo">ADAM ROBERTS</h1>
-		<p>Software Developer</p>
 	</a>
 	<a href="/about" class="topbar-2">
 		<p>About me</p>
