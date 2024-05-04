@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		// Scroll to the top of the page when the component mounts
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	});
 </script>
@@ -144,9 +143,15 @@
 			margin-bottom: var(--mobile-vertical-gap);
 		}
 		.portfolio-item-div {
-			width: 100%;
+			max-width: 100%;
 			height: 19rem;
 			overflow: hidden;
+			border-radius: 1rem;
+			transition: .15s;
+			padding: .5rem;
+		}
+		.portfolio-item-div:hover {
+			box-shadow: 0 0 1rem var(--accent-3);
 		}
 		.portfolio-item-div a {
 			display: block;
@@ -159,13 +164,15 @@
 			height: 70%;
 			margin-bottom: 0.5rem;
 			background-color: var(--off-white-bg);
-			box-shadow: 0 0rem 0.5rem 0 var(--accent-3);
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			border: 1px solid var(--border);
+			border-radius: 1rem;
 		}
 		.img-div-portfolio-item img {
-			height: 80%;
+			width: 95%;
+			object-fit:scale-down;
 		}
 		.text-div-portfolio-item h2 {
 			color: var(--h2);
@@ -194,8 +201,12 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			box-shadow: 0 0 0.5rem 0.25rem var(--border);
+			border: 1px solid var(--border);
+			transition: .15s;
 			border-radius: 0.5rem;
+		}
+		.contact-grid-item:hover {
+			box-shadow: 0 0 1rem var(--accent-2);
 		}
 		a {
 			display: flex;
@@ -255,6 +266,7 @@
 		.portfolio-item-div {
 			width: 100%;
 			overflow: hidden;
+			border-radius: 1rem;
 		}
 		.portfolio-item-div a {
 			display: block;
@@ -267,13 +279,14 @@
 			height: 13rem;
 			margin-bottom: 0.5rem;
 			background-color: var(--off-white-bg);
-			box-shadow: 0 0rem 0.5rem 0 var(--accent-3);
+			border: 1px solid var(--accent-3);
+			border-radius: 1rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
 		.img-div-portfolio-item img {
-			height: 80%;
+			width: 95%;
 		}
 		.text-div-portfolio-item h2 {
 			color: var(--h2);
@@ -298,8 +311,9 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			box-shadow: 0 0 0.5rem 0.25rem var(--border);
-			border-radius: 0.5rem;
+			/* box-shadow: 0 0 .5rem var(--border); */
+			border: 1px solid var(--border);
+			border-radius: .5rem;
 		}
 		a {
 			display: flex;

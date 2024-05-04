@@ -5,11 +5,10 @@
     --h2: #666;
     --subtle-grey: rgb(187, 187, 187);
     --text: #555;
-    --accent-1: #FFA500;
     --accent-2: #6E8CB6;
     --accent-3: #007F7F;
     --border: #ccc;
-    --off-white-bg: #FFFAFA;
+    --off-white-bg: rgb(245, 245, 245);
 
     --top-of-page-mobile-margin: 6rem;
     --mobile-margin-inline: 2rem;
