@@ -22,6 +22,24 @@
         color: var(--h1);
     }
 
+    @media only screen and (min-width: 768px) {
+        h1 {
+            margin-top: var(--top-of-page-desktop-margin);
+        }
+        h3 {
+            margin-bottom: .25rem;
+        }
+        .divider, .content-item {
+            margin-bottom: 1rem;
+        }
+        .content-item {
+            margin-inline: var(--desktop-margin-inline);
+        }
+        .about-title {
+            margin-bottom: 3rem
+        }
+    }
+
     @media only screen and (max-width: 768px) {
         h1 {
             margin-top: var(--top-of-page-mobile-margin);

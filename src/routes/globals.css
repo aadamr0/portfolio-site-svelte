@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --h1: #333;
+    --h1: #282828;
     --h2: #666;
     --subtle-grey: #bbb;
     --text: #555;
@@ -14,6 +14,10 @@
     --top-of-page-mobile-margin: 6rem;
     --mobile-margin-inline: 2rem;
     --mobile-vertical-gap: 3rem;
+
+    --desktop-margin-inline: 10%;
+    --desktop-vertical-gap: 7rem;
+    --top-of-page-desktop-margin: 6rem;
 }
 
 * {

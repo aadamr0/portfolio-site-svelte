@@ -3,7 +3,7 @@
 </script>
 
 <div class="welcome-div content-div">
-	<h2>Hey, welcome!</h2>
+	<h2 id="welcome">Hey, welcome!</h2>
 </div>
 <div class="introduction-div content-div">
 	<h2 id="intro">
@@ -91,7 +91,7 @@
 		color: var(--h1);
 	}
 	h2 {
-		background: linear-gradient(45deg, var(--h2), var(--h1));
+		background: linear-gradient(to right, var(--h2), var(--h1));
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
@@ -99,6 +99,117 @@
 	.divider-title {
 		font-family: 'Courier New', Courier, monospace;
 		color: var(--subtle-grey);
+	}
+
+	/* desktop design */
+	@media only screen and (min-width: 768px) {
+		.content-div {
+			margin-inline: var(--desktop-margin-inline);
+			margin-bottom: var(--desktop-vertical-gap);
+		}
+		.welcome-div {
+			margin-top: var(--top-of-page-desktop-margin);
+			margin-bottom: 1rem;
+		}
+		#welcome {
+			font-size: 2rem;
+		}
+		.introduction-div {
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}
+		.br {
+			margin-bottom: .5rem;
+		}
+		.divider-title {
+			margin-bottom: var(--desktop-vertical-gap);
+		}
+		.portfolio-grid-div {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			gap: 3rem;
+			margin-bottom: var(--mobile-vertical-gap);
+		}
+		.portfolio-item-div {
+			width: 100%;
+			height: 19rem;
+			overflow: hidden;
+		}
+		.portfolio-item-div a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+		}
+		.img-div-portfolio-item {
+			width: 100%;
+			height: 70%;
+			margin-bottom: 0.5rem;
+			background-color: var(--off-white-bg);
+			box-shadow: 0 0rem 0.5rem 0 var(--accent-3);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.img-div-portfolio-item img {
+			height: 80%;
+		}
+		.text-div-portfolio-item h2 {
+			color: var(--h2);
+		}
+		.text-div-portfolio-item h3 {
+			color: var(--subtle-grey);
+		}
+
+		/* contact part */
+		.get-in-touch-h2 {
+			margin-inline: 10%;
+		}
+		.content-item {
+			margin-inline: var(--mobile-margin-inline);
+			margin-bottom: var(--mobile-vertical-gap);
+		}
+		.contact-grid-div {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 9rem 9rem;
+			gap: var(--mobile-vertical-gap);
+			margin-inline: 10%;
+		}
+		.contact-grid-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			box-shadow: 0 0 0.5rem 0.25rem var(--border);
+			border-radius: 0.5rem;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-decoration: none;
+			width: 100%;
+			height: 100%;
+			color: var(--h1);
+		}
+		.colour-3 {
+			color: var(--accent-3);
+		}
+		.get-in-touch-h2 {
+			margin-bottom: 1rem;
+		}
+		.contact-grid-item h2 {
+			padding-bottom: 0.66rem;
+		}
+		#intro {
+			font-weight: 500;
+		}
+		#my-vid {
+			pointer-events: none;
+		}
 	}
 
 	/* mobile design */
