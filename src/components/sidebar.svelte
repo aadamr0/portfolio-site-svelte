@@ -4,7 +4,8 @@
 
 <div class="sidebar-div">
 	<div class="sidebar-top-div">
-		<p>Logo</p>
+		<p id="logo-s">ADAM ROBERTS</p>
+		<p>Junior Software Developer</p>
 	</div>
 	<div class="sidebar-mid-div">
 		<p class="sidebar-title">Go to</p>
@@ -18,9 +19,12 @@
 		<ul>
 			<li><a href="mailto: adamb.0@outlook.com"><Mail /> Email</a></li>
 			<li><a download href="/Adam Roberts Junior Software Developer.pdf"><FileText /> CV </a></li>
-			<li><a target="_blank" href="https://www.linkedin.com/in/adamj-roberts/"><Linkedin /> LinkedIn </a></li>
+			<li>
+				<a target="_blank" href="https://www.linkedin.com/in/adamj-roberts/"
+					><Linkedin /> LinkedIn
+				</a>
+			</li>
 			<li><a target="_blank" href="https://github.com/aadamr0"><GithubIcon /> GitHub </a></li>
-			
 		</ul>
 	</div>
 </div>
@@ -39,8 +43,15 @@
 		flex-basis: 26%;
 		border-bottom: 1px solid var(--border);
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.sidebar-top-div p {
+		font-family: Inter;
+	}
+	#logo-s {
+		font-weight: 700;
 	}
 	.sidebar-mid-div {
 		flex-grow: 0;
@@ -62,18 +73,17 @@
 		align-items: center;
 	}
 	ul {
-		/* width: 70%; */
 		width: 11rem;
 		left: 50%;
 		text-align: center;
-		padding-left: .5rem;
+		padding-left: 0.5rem;
 		border-left: 1px solid var(--accent-2);
 	}
 	a {
 		text-decoration: none;
 		color: var(--text);
 		display: flex;
-		gap: .25rem;
+		gap: 0.25rem;
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -84,11 +94,11 @@
 		/* padding-block: .3rem; */
 		height: 2rem;
 		width: 90%;
-		transition: .15s;
-		border-radius: .25rem;
+		transition: 0.15s;
+		border-radius: 0.25rem;
 	}
 	li:hover {
-		padding-left: .25rem;
+		padding-left: 0.25rem;
 		background-color: var(--subtle-grey);
 	}
 	/* li:hover a {

@@ -41,6 +41,47 @@
 </div>
 
 <style>
+	/* desktop */
+	@media only screen and (min-width: 768px) {
+		h1 {
+			color: var(--h1);
+		}
+		.back-btn {
+			margin-top: 4rem;
+		}
+		a {
+			text-decoration: none;
+			color: var(--accent-3);
+			padding: 0.5rem;
+		}
+		ul {
+			list-style: disc;
+			list-style-position: inside;
+		}
+		.content-item {
+			margin-inline: var(--desktop-margin-inline);
+			margin-bottom: var(--mobile-vertical-gap);
+		}
+		.project-media-div {
+			box-shadow: 0 0 0.45rem 0.15rem var(--border);
+			border-radius: 1rem;
+			height: 17rem;
+			overflow: clip;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.project-media-div img {
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+		}
+		#vid {
+			pointer-events: none;
+		}
+	}
+
+	/* mobile */
 	@media only screen and (max-width: 768px) {
 		h1 {
 			color: var(--h1);

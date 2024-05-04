@@ -24,15 +24,9 @@
 	#topbar-div {
 		width: 100%;
 		height: 100%;
-		/* border-bottom: 1px solid var(--border); */
-		background: linear-gradient(
-			to bottom,
-			rgba(256, 256, 256, 1) 70%,
-			rgba(256, 256, 256, .5)
-		);
+		border-bottom: 1px solid var(--border);
 		position: relative;
 		display: flex;
-		border-bottom: 1px solid var(--border);
 	}
 
 	.topbar-1 {
@@ -44,6 +38,7 @@
 		flex-direction: column;
 		align-items: center;
 		border-right: 1px solid var(--border);
+		text-align: center;
 	}
 
 	.topbar-1 h1 {

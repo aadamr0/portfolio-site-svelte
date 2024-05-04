@@ -14,10 +14,16 @@
 <div class="introduction-div content-div">
 	<h2 id="intro">
 		I am Adam, a talented junior software developer trained by the top bootcamp in the UK. <br />
-		<div class="br"></div>
-		I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express
-		and PostgreSQL. I am looking for an entry level position in an excellent company.
 	</h2>
+	<div class="br"></div>
+	<p>
+		I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express
+		and PostgreSQL.
+	</p>
+	<div class="br"></div>
+	<p>I am looking for an entry level position in an excellent company.</p>
+	<div class="br"></div>
+	<p>Take a look at my portfolio and get in touch, I am always happy to chat!</p>
 </div>
 
 <br />
@@ -227,7 +233,7 @@
 			margin-inline: var(--mobile-margin-inline);
 		}
 		.welcome-div {
-			margin-top: 7rem;
+			margin-top: 5.5rem;
 			margin-bottom: 0.5rem;
 		}
 		.introduction-div {

@@ -50,9 +50,11 @@
 
 	.content-layout-div {
 		height: 100%;
+		width: 100%;
 		overflow: clip;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.content-column-div {
@@ -72,12 +74,14 @@
 	.topbar-layout-div {
 		display: none;
 	}
-
+	/* desktop */
 	@media only screen and (min-width: 768px) {
 		.content-column-div {
 			box-shadow: 0 0 3rem var(--border);
-			max-width: 75%;
 			overflow: scroll;
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 75%;
 		}
 		footer {
 			margin-top: auto;
@@ -108,7 +112,10 @@
 			left: 0;
 			z-index: 1000;
 			width: 100%;
-			height: 10%;
+			height: 9%;
+			background-color: white;
+			box-shadow: 0 0 1rem -.5rem var(--h2);
+
 		}
 
 		.content-column-div {
