@@ -1,6 +1,7 @@
 <script lang="ts">
 	export let data;
 	const project = data.project;
+	import { onMount } from 'svelte';
 </script>
 
 <div class="back-btn content-item">

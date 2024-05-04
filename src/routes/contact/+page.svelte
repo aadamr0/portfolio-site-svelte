@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Mail, Linkedin, FileText, GithubIcon } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 </script>
 
 <div class="contact-title content-item">

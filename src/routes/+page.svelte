@@ -1,5 +1,11 @@
 <script lang="ts">
 	import { Mail, Linkedin, GithubIcon, FileText } from 'lucide-svelte';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		// Scroll to the top of the page when the component mounts
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
 </script>
 
 <div class="welcome-div content-div">
@@ -9,7 +15,7 @@
 	<h2 id="intro">
 		I am Adam, a talented junior software developer trained by the top bootcamp in the UK. <br />
 		<div class="br"></div>
-		 I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express
+		I work with JavaScript, frontend frameworks like React and Svelte, and backend tech like Express
 		and PostgreSQL. I am looking for an entry level position in an excellent company.
 	</h2>
 </div>
@@ -119,7 +125,7 @@
 			margin-bottom: 3rem;
 		}
 		.br {
-			margin-bottom: .5rem;
+			margin-bottom: 0.5rem;
 		}
 		.divider-title {
 			margin-bottom: var(--desktop-vertical-gap);

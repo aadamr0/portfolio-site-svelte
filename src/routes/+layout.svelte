@@ -5,16 +5,28 @@
 	import Sidebar from '../components/sidebar.svelte';
 
 	import { fade } from 'svelte/transition';
+	import { onNavigate } from '$app/navigation';
 	export let data;
 	const transitionSpeed = 125;
 	const transitionPause = 125;
+
+	import { page } from '$app/stores';
+	let content;
+
+	onNavigate(({ to }) => {
+		const currentRoute = $page.url.pathname;
+		setTimeout(() => {
+			const nextRoute = to?.route.id;
+			if (currentRoute !== nextRoute) content.scrollTop = 0;
+		}, transitionSpeed);
+	});
 </script>
 
 <div id="app">
 	<div class="topbar-layout-div"><Topbar /></div>
 	<div class="sidebar-layout-div"><Sidebar /></div>
 	<div class="content-layout-div">
-		<div class="content-column-div">
+		<div bind:this={content} class="content-column-div">
 			{#key data}
 				<div
 					in:fade={{ duration: transitionSpeed, delay: transitionSpeed + transitionPause }}
