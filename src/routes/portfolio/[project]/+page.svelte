@@ -50,9 +50,16 @@
 			margin-top: 4rem;
 		}
 		a {
-			text-decoration: none;
+			transition-duration: 0.15s;
 			color: var(--accent-3);
 			padding: 0.5rem;
+			border-radius: 0.5rem;
+		}
+		a:hover {
+			box-shadow: 0 0 0.5rem var(--accent-2);
+		}
+		li {
+			padding-block: 0.5rem;
 		}
 		ul {
 			list-style: disc;
@@ -90,7 +97,6 @@
 			margin-top: var(--top-of-page-mobile-margin);
 		}
 		a {
-			text-decoration: none;
 			color: var(--accent-3);
 			padding: 0.5rem;
 		}

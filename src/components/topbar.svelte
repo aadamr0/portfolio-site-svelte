@@ -13,7 +13,7 @@
 		<p>About me</p>
 	</a>
 	<a href="/contact" class="topbar-3">
-		<p>Contact / CV</p>
+		<p>Contact/CV</p>
 	</a>
 </div>
 

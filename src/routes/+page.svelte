@@ -32,6 +32,17 @@
 
 <div class="portfolio-grid-div content-div">
 	<div class="portfolio-item-div">
+		<a href="portfolio/portfolio-site">
+			<div class="img-div-portfolio-item">
+				<video playsinline autoplay height="90%" loop src="/portfolio-video.mov"></video>
+			</div>
+			<div class="text-div-portfolio-item">
+				<h2>Portfolio Website</h2>
+				<h3>You're on it</h3>
+			</div>
+		</a>
+	</div>
+	<div class="portfolio-item-div">
 		<a href="portfolio/nc-news-api">
 			<div class="img-div-portfolio-item api-img">
 				<img src="/API-scrnprnt.png" alt="Code API" />
@@ -56,7 +67,7 @@
 	<div class="portfolio-item-div">
 		<a href="portfolio/travelog">
 			<div class="img-div-portfolio-item">
-				<video id="my-vid" src="/travelog-video.mov" height="100%" autoplay loop playsinline
+				<video id="my-vid" src="/travelog-video.mov" height="90%" autoplay loop playsinline
 				></video>
 			</div>
 			<div class="text-div-portfolio-item">
@@ -88,7 +99,7 @@
 	</div>
 	<div class="CV-grid-item contact-grid-item">
 		<a download href="/Adam Roberts Junior Software Developer.pdf">
-			<h2>CV</h2>
+			<h2>CV (pdf)</h2>
 			<div class="colour-3"><FileText size={50} /></div>
 		</a>
 	</div>
@@ -110,6 +121,9 @@
 	.divider-title {
 		font-family: 'Courier New', Courier, monospace;
 		color: var(--subtle-grey);
+	}
+	.my-vid {
+		pointer-events: none;
 	}
 
 	/* desktop design */
@@ -147,11 +161,11 @@
 			height: 19rem;
 			overflow: hidden;
 			border-radius: 1rem;
-			transition: .15s;
-			padding: .5rem;
+			transition: 0.15s;
+			padding: 0.5rem;
 		}
 		.portfolio-item-div:hover {
-			box-shadow: 0 0 1rem var(--accent-3);
+			box-shadow: 0 0 0.5rem var(--accent-3);
 		}
 		.portfolio-item-div a {
 			display: block;
@@ -172,13 +186,13 @@
 		}
 		.img-div-portfolio-item img {
 			width: 95%;
-			object-fit:scale-down;
+			object-fit: scale-down;
 		}
 		.text-div-portfolio-item h2 {
-			color: var(--h2);
+			color: var(--text);
 		}
 		.text-div-portfolio-item h3 {
-			color: var(--subtle-grey);
+			color: var(--h2);
 		}
 
 		/* contact part */
@@ -202,11 +216,11 @@
 			align-items: center;
 			flex-direction: column;
 			border: 1px solid var(--border);
-			transition: .15s;
+			transition: 0.15s;
 			border-radius: 0.5rem;
 		}
 		.contact-grid-item:hover {
-			box-shadow: 0 0 1rem var(--accent-2);
+			box-shadow: 0 0 0.5rem var(--accent-2);
 		}
 		a {
 			display: flex;
@@ -230,9 +244,7 @@
 		#intro {
 			font-weight: 500;
 		}
-		#my-vid {
-			pointer-events: none;
-		}
+		
 	}
 
 	/* mobile design */
@@ -289,10 +301,10 @@
 			width: 95%;
 		}
 		.text-div-portfolio-item h2 {
-			color: var(--h2);
+			color: var(--text);
 		}
 		.text-div-portfolio-item h3 {
-			color: var(--subtle-grey);
+			color: var(--h2);
 		}
 
 		/* contact part */
@@ -313,7 +325,7 @@
 			flex-direction: column;
 			/* box-shadow: 0 0 .5rem var(--border); */
 			border: 1px solid var(--border);
-			border-radius: .5rem;
+			border-radius: 0.5rem;
 		}
 		a {
 			display: flex;

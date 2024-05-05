@@ -48,13 +48,25 @@ const projects: Project[] = [
         title: 'Mobile App - Travelog',
         mediaType: 'video',
         mediaUrl: '/travelog-video.mov',
-        description: 'A travel journal app built in 8 days, in a team of 6, using React Native and Expo. Take a look at the GitHub below.',
+        description: 'A travel journal app built in 8 days, in a team of 6, using React Native and Expo (frontend), and Firebase (backend). Take a look at the GitHub below.',
         links: {
                 GitHub: 'https://github.com/Koalaphant/TravelJournal?tab=readme-ov-file',
                 Demo: ''
             },
-        techStack: "React Native, Expo",
+        techStack: "React Native, Expo, Firebase",
         slug: 'travelog',
+    },
+    {
+        title: 'Portfolio Website',
+        mediaType: 'video',
+        mediaUrl: '/portfolio-video.mov',
+        description: 'You\'re on my portfolio site! Drop me a message and let me know what you think. Find my contact details at the bottom of the sidebar and on the homepage. Feedback is always appreciated.',
+        links: {
+                GitHub: '',
+                Demo: ''
+            },
+        techStack: "SvelteKit, HTML, CSS, JavaScript",
+        slug: 'portfolio-site',
     },
 ]
 

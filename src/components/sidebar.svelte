@@ -18,7 +18,9 @@
 		<p class="sidebar-title">Contact details</p>
 		<ul>
 			<li><a href="mailto: adamb.0@outlook.com"><Mail /> Email</a></li>
-			<li><a download href="/Adam Roberts Junior Software Developer.pdf"><FileText /> CV </a></li>
+			<li>
+				<a download href="/Adam Roberts Junior Software Developer.pdf"><FileText /> CV (pdf)</a>
+			</li>
 			<li>
 				<a target="_blank" href="https://www.linkedin.com/in/adamj-roberts/"
 					><Linkedin /> LinkedIn
@@ -98,12 +100,9 @@
 		border-radius: 0.25rem;
 	}
 	li:hover {
-		padding-left: 0.25rem;
-		background-color: var(--subtle-grey);
+		padding-left: 0.33rem;
+		box-shadow: 0 0 0.5rem var(--accent-2);
 	}
-	/* li:hover a {
-
-	} */
 	.sidebar-title {
 		margin-bottom: 1.5rem;
 		font-family: 'Courier New', Courier, monospace;
