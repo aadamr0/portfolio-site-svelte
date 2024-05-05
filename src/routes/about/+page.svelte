@@ -13,7 +13,7 @@
 	<p><strong>Hosting:</strong> CI/CD, Render, Netlify, Shared hosting, Elephant SQL</p>
 	<p>
 		<strong>Other:</strong> Agile, Pair programming, OOP, Functional programming, AI workflow, MVC, Git,
-		GitHub, version control
+		GitHub, version control, FTP
 	</p>
 </div>
 <div class="divider"></div>
