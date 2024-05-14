@@ -34,7 +34,7 @@
 	<div class="portfolio-item-div">
 		<a href="portfolio/portfolio-site">
 			<div class="img-div-portfolio-item">
-				<video playsinline autoplay height="90%" loop src="/portfolio-video.mov"></video>
+				<video playsinline autoplay width="75%" loop src="/portfolio-video.mov"></video>
 			</div>
 			<div class="text-div-portfolio-item">
 				<h2>Portfolio Website</h2>
